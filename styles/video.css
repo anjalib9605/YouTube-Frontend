@@ -1,0 +1,142 @@
+
+
+.full-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 20px;
+}
+
+@media(max-width: 1150px) {
+  .full-container{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media(max-width: 700px) {
+  .full-container{
+    grid-template-columns: 1fr ;
+  }
+}
+@media(min-width: 1500px) {
+  .full-container{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.thumbnail-div{
+  position: relative;
+}
+
+.thumbnails{
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  border-radius: 18px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.video-time{
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: black;
+  color: white;
+  padding: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 3px;
+}
+
+.video-box{
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+  width: 90%;
+  min-width: 80%;
+  height: auto;
+  border-radius: 18px;
+  transition: background-color 0.5s;
+  position: relative;
+}
+.video-box:hover{
+  background-color: rgb(223, 223, 223);
+}
+
+.profile-pic-div .profile-tooltip{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  padding-left: 10px;
+  width: 200px;
+  border-radius: 12px;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.15),
+              -1px -1px 3px rgba(0,0,0,0.15);
+  height: 80px;
+  opacity: 0;
+  background-color: white;
+  transition: opacity 0.7s;
+  z-index: 1;
+}
+.profile-pic-div:hover .profile-tooltip{
+  opacity: 1;
+}
+.profile-pic-tooltip{
+  width: 50px;
+  border-radius:100px;
+}
+.rest-tooltip-content{
+  margin-left: 10px;
+}
+.tooltip-title{
+  font-weight: bold;
+}
+.tooltip-stat{
+  font-size: 13px;
+  color: rgb(100, 100, 100);
+}
+
+.video-box .video-title{
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 335px;
+  padding-left: 8px;
+}
+.video-box .video-author, .video-box .video-stats{
+  color: rgb(66, 66, 66); 
+  font-size: 14px;
+  line-height: 22px;
+  padding-left: 8px;
+}
+.video-box .video-author{
+  cursor: pointer;
+}
+.profile-pic{
+  width: 40px;
+  border-radius:100px;
+  cursor:pointer;
+}
+
+.video-info-div{
+  display: flex;
+  flex-direction: row;
+  margin-top: 7px;
+}
+
+.video-title a {
+  color: rgb(0, 0, 0);
+  text-decoration: none; 
+}
+.video-title a:visited {
+  color: rgb(0, 0, 0); 
+}
+.video-author a {
+  color: rgb(66, 66, 66); 
+  text-decoration: none;
+}
+.video-author a:visited {
+  color: rgb(66, 66, 66); 
+}
+/*Gut*/
